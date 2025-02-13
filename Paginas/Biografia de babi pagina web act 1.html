@@ -1,104 +1,102 @@
-
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=divice-width, initial-scale=1.0 " >
-     <h1>Biografía de Babi | Historia y resumen cronológico</h1>
-   <style>
-      .contenedor {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía de Babi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+        }
+        nav button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        nav button:hover {
+            background-color: #555;
+        }
+        .content {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            padding: 20px;
+            text-align: justify;
+        }
+        .contenedor {
             display: flex;
             align-items: center; 
             justify-content: center; 
-            gap: 20px; /
+            gap: 20px; 
+            padding: 20px;
         }
-    
-
-.contenedor p {
-    text-align: justify; 
-    font-size: 18px;
-    line-height: 1.5; 
-}
- </style>
- <style>
-    body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-          }
-          nav {
-            background-color: #333;
-            padding: 10xp 0;
-            width: 100;
-            top: 0;
-            left: 0;
-             }
-             ul {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-                display: flex;
-                justify-content: center;
-             }
-             li{
-                margin: 0 15xp;
-             }
-             a {
-                text-decoration:none ;
-                color:white;
-                font-size: 18xp;
-                padding: 18xp; 
-             }
-             a:hover{
-                background-color: #555;
-                border-radius: 5xp;
-             }
-             .contenedor{
-                margin-top: 60xp;
-                padding: 20xp;
-                text-align: center;
-             }
-                
- </style>
- </head>
-
+        .contenedor img {
+            width: 250px;
+        }
+    </style>
+</head>
 <body>
-    
-   <div class="contenedor"> 
-    <img src="Imagenes/Babi.jpg">
-    <img src="https://enciclopedia.net/doc/babi.jpg" width="250">
-    <div class="texto">
-            <h2>Biografía de Babi</h2>
-        <p>Tiene 25 años, en 2024. Babi es una cantante española de rap. 
-        Goza de un gran fanatismo por parte de sus fieles seguidores, 
-        sin embargo, su rasgo artístico más singular es que optó por 
-        el anonimato. Está considerada una de las artistas jóvenes más
-         singulares, por la mezcla de una voz que transmite melancolía,
-          con composiciones que son el resultado de vivencias personales de 
-          fuerte impacto. Lo jodiste, Colegas, Rota y Devuélvemelo, son sus
-           hits más aclamados y reproducidos. Cuenta con más de un millón 
-           de oyentes mensuales según estadísticas de la plataforma Spotify.
-            Ha realizado colaboraciones con otros colegas que le reportaron 
-            notoriedad: G. Sony, Xenon, Ly Raine, Miranda, a quien considera 
-            su modelo e inspiración, y Marc Seguí. Reconoció que el rapero Calero 
-            LDN es el artista que más la ha motivado a la hora de la composición, 
-        y según confesó, quien la ha hecho llorar con sus letras.</p>
-       
+    <nav>
+        <button onclick="mostrarSeccion('Historia')">Historia</button>
+        <button onclick="mostrarSeccion('Gustos')">Gustos</button>
+        <button onclick="mostrarSeccion('Música')">Música</button>
+        <button onclick="mostrarSeccion('Anécdotas')">Anécdotas</button>
+    </nav>
+    <div class="content" id="contenido">
+        <div class="contenedor" id="Historia">
+            <img src="https://enciclopedia.net/doc/babi.jpg" width="250">
+            <div>
+                <h2>Biografía de Babi</h2>
+                <p>Tiene 25 años en 2024. Babi es una cantante española de rap.</p>
+            </div>
+        </div>
     </div>
-    <div class="contenedor">
-        <div class="texto">
-            <h2>24/06/1999</h2>
-            <p>
-                Nació en la ciudad de Madrid. Su nombre real es Bárbara Guillen Cantarero, siendo Babi su seudónimo artístico.
-                El origen del nombre profesional surgió entre los 10 y 11 años, y corresponde naturalmente al diminutivo de su nombre, 
-                con el cual la llamaron sus familiares y allegados desde chica. Tan acostumbrada estaba ya al mismo que no quiso perder 
-                tiempo en buscar otro y se quedó con él, porque además considera que la representa.
-                Se supo que desde pequeña se sintió atraída por la expresión e interpretación musical,
-                sin embargo, decidió no exhibir la producción que fue creando, que en un comienzo nació
-                como una terapia personal para sacar afuera todas aquellas cuestiones que la interpelaban como persona, especialmente un problema 
-                que tuvo en la escuela, durante la adolescencia.
-                También, desde temprana edad, empezó a tocar la guitarra y el piano, actividades que la
-                acercaron aún más a desarrollar su costado musical. 
-            </p>
-
-    </div>
+    <script>
+        function mostrarSeccion(seccion) {
+            const contenido = document.getElementById("contenido");
+            const secciones = {
+                "Historia": `<div class='contenedor'>
+                                <img src='https://enciclopedia.net/doc/babi.jpg' width='250'>
+                                <div>
+                                    <h2>Biografía de Babi</h2>
+                                 <p>Goza de un gran fanatismo por parte de sus fieles seguidores, 
+                                    sin embargo, su rasgo artístico más singular es que optó por 
+                                    el anonimato. Está considerada una de las artistas jóvenes más
+                                    singulares, por la mezcla de una voz que transmite melancolía,
+                                    con composiciones que son el resultado de vivencias personales de 
+                                    fuerte impacto. Lo jodiste, Colegas, Rota y Devuélvemelo, son sus
+                                    hits más aclamados y reproducidos. Cuenta con más de un millón 
+                                    de oyentes mensuales según estadísticas de la plataforma Spotify.
+                                    Ha realizado colaboraciones con otros colegas que le reportaron 
+                                    notoriedad: G. Sony, Xenon, Ly Raine, Miranda, a quien considera 
+                                    su modelo e inspiración, y Marc Seguí. Reconoció que el rapero Calero 
+                                    LDN es el artista que más la ha motivado a la hora de la composición, 
+                                    y según confesó, quien la ha hecho llorar con sus letras.</p>
+                                </div>
+                              </div>`,
+                "Gustos": "Aquí encontrarás mis gustos personales.",
+                "Música": "Explora mis géneros y artistas favoritos.",
+                "Anécdotas": "Algunas anécdotas interesantes que quiero compartir."
+            };
+            contenido.innerHTML = secciones[seccion];
+        }
+    </script>
 </body>
 </html>
