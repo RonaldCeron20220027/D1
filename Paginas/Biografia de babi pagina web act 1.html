@@ -1,65 +1,23 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biografía de Babi</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-        }
-        nav {
-            background-color: #333;
-            color: white;
-            display: flex;
-            justify-content: space-around;
-            padding: 15px;
-        }
-        nav button {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            padding: 10px;
-        }
-        nav button:hover {
-            background-color: #555;
-        }
-        .content {
-            flex-grow: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-            padding: 20px;
-            text-align: justify;
-        }
-        .contenedor {
-            display: flex;
-            align-items: center; 
-            justify-content: center; 
-            gap: 20px; 
-            padding: 20px;
-        }
-        .contenedor img {
-            width: 250px;
-        }
-    </style>
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Biografia de babi</title>
+    <main>
+        Este pagina esta hecha 100% solo con Html
+    </main>
 </head>
 <body>
-    <nav>
-        <button onclick="mostrarSeccion('Historia')">Historia</button>
-        <button onclick="mostrarSeccion('Gustos')">Gustos</button>
-        <button onclick="mostrarSeccion('Música')">Música</button>
-        <button onclick="mostrarSeccion('Anécdotas')">Anécdotas</button>
-    </nav>
-    <div class="content" id="contenido">
+    <div>
+        <nav>
+            <button onclick="mostrarSeccion('Historia')">Historia</button>
+            <button onclick="mostrarSeccion('Gustos')">Gustos</button>
+            <button onclick="mostrarSeccion('Música')">Música</button>
+            <button onclick="mostrarSeccion('Anécdotas')">Anécdotas</button>
+        </nav>
+
+       <div class="content" id="contenido">
         <div class="contenedor" id="Historia">
             <img src="https://enciclopedia.net/doc/babi.jpg" width="250">
             <div>
@@ -73,6 +31,7 @@
             const contenido = document.getElementById("contenido");
             const secciones = {
                 "Historia": `<div class='contenedor'>
+                                   
                                 <img src='https://enciclopedia.net/doc/babi.jpg' width='250'>
                                 <div>
                                     <h2>Biografía de Babi</h2>
@@ -88,15 +47,154 @@
                                     notoriedad: G. Sony, Xenon, Ly Raine, Miranda, a quien considera 
                                     su modelo e inspiración, y Marc Seguí. Reconoció que el rapero Calero 
                                     LDN es el artista que más la ha motivado a la hora de la composición, 
-                                    y según confesó, quien la ha hecho llorar con sus letras.</p>
+                                    y según confesó, quien la ha hecho llorar con sus letras.</p> 
+                                    <br>
+                                    <p>
+                                        Su música se caracteriza por ritmos pausados y letras que abordan temas de dolor y 
+                                        experiencias personales, fusionando géneros como el lofi, el rap y el trap.
+                                         Babi ha mencionado que su principal influencia musical es el rapero venezolano Canserbero.
+                                        </p>
+                                        <p>
+                                            Babi utiliza la música como una forma de desahogo y 
+                                            busca que sus oyentes encuentren en sus canciones una 
+                                            sensación de compañerismo, especialmente en momentos difíciles.
+                                            </p>
                                 </div>
-                              </div>`,
-                "Gustos": "Sus géneros Musicales y artistas favoritos.",
-                "Música": "Sus Hit musicales.",
-                "Anécdotas": "Algunas anécdotas."
+                                 <div>
+                             </div>`,
+                "Gustos": `<div class='contenedor'>
+                    <h2>
+                        Los gustos de la auto cantatra babi  
+                        </h2>
+                        <p>Babi interpreta hip hop, lofi y trap. Su influencia entre otros géneros musicales. 
+                            Su principal influencia en la música ha sido el rapero venezolano <u>Canserbero.
+                            </p>
+                            
+                            <p>
+                                Sus gustos musicales, además del rap, Babi disfruta de diversos géneros, 
+                                incluyendo música clásica y psicotrance, mostrando una amplia variedad en sus preferencias auditivas. 
+                                </p>
+                               <p>Unos de sus libros favoritos </p>
+                                <cite>
+                                    El principe de la nieblas
+                                    </cite>
+                     </div>`,
+                "Música": `<div class='contenedor'>
+                    <h2>
+                        Los hits musicales de babi  
+                        </h2>
+                        <p>Babi en su carre musical a subido 51 canciones y teniendo mas de 1.18M Yuotube</p>
+                        <br>
+                        <p>En 2019, Babi estrenó los sencillos "Desierto", "Duelo dulce", "Tu nana" y "Low Key". Esta última pieza musical contó más de dos millones y medio de reproducciones en YouTube.
+
+                       En 2020, presentó "Nasa", "Prioridades" y "Me sabe mal", entre otras canciones. La primera alcanzó siete millones de reproducciones en YouTube.
+
+                     Durante el 2021, Babi compartió con su público los temas "Nací pa' esto" y "Cocaína". Hacia finales de ese año fue considerada como una de las cantantes hispanas con mayor proyección.
+
+                     No hay mal que por bien no venga, reza un dicho común. Una crisis en sus años muy mozos, le dio a Babi la oportunidad de descubrir a qué dedicaría su vida en adelante. Hizo catarsis con la música y se reveló cantante, compositora.
+
+                    Como muchos noveles intérpretes de las últimas décadas, Babi encontró público en las redes sociales para su talentoso trabajo en hip hop, lofi o trap. Ha continuado creciendo en la industria musical, hasta ser considerada actualmente como una de las cantantes hispanas con mayor proyección</p>
+                        <div>
+                            <h2>Algunos de sus Hits</h2>
+                           <sub> <ol>Devuelmelo</ol> </sub>
+                           <strong> <ol>Rota</ol> </strong>
+                            <ol>Lo jodsiste</ol>
+                            <ol>Game Ova</ol>
+                            <ol>Tu nana</ol>
+                            <ol>NASA</ol>
+                            <ol>Flores</ol>
+                            <ol>Caro</ol>
+                            
+                            
+                            </div>
+                            <hr>
+                            <div>
+                                <h2>Musica para que escuches algunos temas de babi</h2>
+                                
+                                <audio controls >
+                                    
+                                    <source src="./Audios/Xina Mora, Babi - 888 (Karma) (Vídeo Oficial).mp3" type="audio/mp3">
+                                 </audio>
+                                  <img src="./Imagenes/https___images.genius.com_c3c8b636447526376d3d53927f9197cf.1000x1000x1.webp" width="250xp">
+                                   
+                                 <audio controls >
+                                     
+                                 <source src="./Audios/BABI - NASA (LYRIC VIDEO OFICIAL).mp3" type="audio/mp3">
+                                 </audio>
+                                 <img src="./Imagenes/500x500-000000-80-0-0.jpg" width="250xp">
+                                  
+                                 <audio controls >
+                                    
+                                 <source src="./Audios/BABI - SUTURA (LYRIC VIDEO OFICIAL).mp3" type="audio/mp3">
+                                 
+                                 </audio>
+                                 <img src="./Imagenes/sutura.jpg" width="250xp">
+                                </body>
+
+
+                                
+                             </div>
+                    </div>`,
+                    
+                "Anécdotas": `<div class='contenedor'>
+                     <h2>
+                        Anècdotas compartidas de babi 
+                        </h2>
+                     <p>
+                        Conversación con Nostromo Magazine, reveló que comenzó a escribir canciones a los 14 años 
+                        como una forma de terapia para lidiar con un problema que tuvo en la escuela. Este proceso 
+                        la llevó a descubrir su pasión por la música, que desde entonces se ha convertido en una parte
+                        esencial de su vida.
+                        </p>
+                        <p>Además, en la misma entrevista, mencionó que su canción "Duelo Dulce" es especialmente significativa para ella, 
+                            ya que fue grabada y compuesta de una manera muy pura y sin ediciones, reflejando profundamente sus emociones. </p>
+                        <b>
+                            <p>Estas experiencias personales han influido en su estilo musical y en la autenticidad de sus composiciones.</p>
+                     <div>
+                        
+    <form>
+        <p>1. ¿Has escuchado a Babi antes?</p>
+        <input type="radio" id="escuchado-si" name="escuchado" value="si">
+        <label for="escuchado-si">Sí</label>
+        
+        <input type="radio" id="escuchado-no" name="escuchado" value="no">
+        <label for="escuchado-no">No</label>
+    
+        <p>2. ¿Te gustaría escuchar su música?</p>
+        <input type="radio" id="gustaria-si" name="gustaria" value="si">
+        <label for="gustaria-si">Sí</label>
+        
+        <input type="radio" id="gustaria-no" name="gustaria" value="no">
+        <label for="gustaria-no">No</label>
+    
+        <p>3. Si ya la escuchaste, ¿te gustó su música?</p>
+        <input type="radio" id="gusto-si" name="gusto" value="si">
+        <label for="gusto-si">Sí</label>
+        
+        <input type="radio" id="gusto-no" name="gusto" value="no">
+        <label for="gusto-no">No</label>
+
+        <label for="cancion">¿Qué canción te gustó más?</label>
+    <select id="cancion" name="cancion">
+        <option value="nasa">NASA</option>
+        <option value="888-karma">888-Karma</option>
+        <option value="sutura">Sutura</option>
+    </select>
+    
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    
+
+</div>
+                    
+                    </div>`
             };
             contenido.innerHTML = secciones[seccion];
         }
     </script>
+   <small>
+   <mark> Ademas la cantante babi nunca a dado un concierto en vivo</mark>
+   </small>
 </body>
 </html>
